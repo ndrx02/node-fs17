@@ -1,11 +1,10 @@
-import { PostPreview } from "../Post/PostPreview/PostPreview"
-import { Link } from "react-router-dom"
-import { Button } from "../Shared_button/Button"
-import { ProfileUser } from "../ProfileUser/ProfileUser"
+import { PostPreview } from "../Post/PostPreview/PostPreview";
+import { Link } from "react-router-dom";
+import { Button } from "../Shared_button/Button";
+import { ProfileUser } from "../ProfileUser/ProfileUser";
 
 export const Home = () => {
-
-  const linkButton = ["Facebook", "Linkedin", "Twitter", "Github", "Instagram"]
+  const linkButton = ["Facebook", "Linkedin", "Twitter", "Github", "Instagram"];
   return (
     <div>
       <ProfileUser
@@ -20,4 +19,4 @@ export const Home = () => {
       <Link to="/post"> continue reading</Link>
     </div>
   );
-}
+};
