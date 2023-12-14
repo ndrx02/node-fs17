@@ -8,8 +8,8 @@ export const Post = () => {
 
       <PostPreview />
       <div>
-        {/*         <h3></h3>
-         */}{" "}
+                <h3></h3>
+        {" "}
         <p>testo post</p>
       </div>
     </div>
