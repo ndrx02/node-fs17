@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./login.css" 
 // Component login pronto, aspettiamo node.js
 export function Login() {
   const [email, setEmail] = useState(null);
@@ -8,15 +9,17 @@ export function Login() {
     event.preventDefault();
   }
   return (
-    <div>
+    <div className="loginAndsignUp">
       <form onSubmit={handleSubmit} action="">
         <input
+          className="login&signUp-input"
           name="email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           type="email"
         />
         <input
+          className="loginAndsignup-input"
           name="password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
