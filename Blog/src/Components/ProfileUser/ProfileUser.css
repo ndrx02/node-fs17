@@ -1,0 +1,16 @@
+.avatar{
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.user-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job{
+  margin-top: 0;
+  color: rgb(97, 98, 99);
+}
