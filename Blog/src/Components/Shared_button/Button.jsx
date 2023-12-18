@@ -1,14 +1,16 @@
-import { useState } from "react"
+import { useState } from "react";
+import "./button.css";
 
-export function Button({ name }){
-const [] = useState("")
+export function Button({ name, icons }) {
+  const [] = useState("");
 
-const linkButton = []
-    return(
-        <>
-        <button>
-            <a>{name}</a>
-        </button>
-        </>
-    )
+  const linkButton = [];
+  return (
+    <>
+      <button className="social-buttons">
+        {icons}
+        {name}
+      </button>
+    </>
+  );
 }

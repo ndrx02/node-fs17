@@ -1,0 +1,6 @@
+.info-user-container {
+  border: 1px black dashed ;
+  padding: 0.3rem;
+  border-radius: 4px ;
+  background-color: rgb(243, 243, 243);
+}
