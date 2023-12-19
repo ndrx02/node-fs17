@@ -2,6 +2,7 @@ import { PostPreview } from "../Post/PostPreview/PostPreview";
 import { Link } from "react-router-dom";
 import { Button } from "../Shared_button/Button";
 import { ProfileUser } from "../ProfileUser/ProfileUser";
+import { CreationPage } from "../CreationPage/CreationPage";
 
 export const Home = () => {
   const linkButton = ["Facebook", "Linkedin", "Twitter", "Github", "Instagram"];
@@ -17,6 +18,7 @@ export const Home = () => {
       ))}
       <PostPreview />
       <Link to="/post"> continue reading</Link>
+      <Link to="/post/create">Clicca qui per creation page</Link>
     </div>
   );
 };

@@ -1,0 +1,36 @@
+.Container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    height: 100vh;
+}
+
+
+.Container form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: rgb(0, 64, 255);
+    color: aliceblue;
+    gap: 10px;
+    border-radius: 7px;
+    padding:10px 5px;
+}
+
+.Container form button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 7px;
+   background-color: hsl(240, 69%, 16%);
+   color: white;
+}
+
