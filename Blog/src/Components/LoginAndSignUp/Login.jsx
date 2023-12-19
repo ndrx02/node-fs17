@@ -1,5 +1,7 @@
 import { useState } from "react";
-import "./loginAndSignUp.css" 
+import { Link } from "react-router-dom";
+
+import "./loginAndSignUp.css";
 // Component login pronto, aspettiamo node.js
 export function Login() {
   const [email, setEmail] = useState(null);
@@ -19,7 +21,7 @@ export function Login() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="email"
-            placeholder="email"
+            placeholder="Email"
           />
           <input
             className="loginAndSignUp-input"
@@ -27,9 +29,14 @@ export function Login() {
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
-            placeholder="password"
+            placeholder="Password"
+            //pattern per password, 1 carattere maiuscolo, miniscolo e un numero richiesto
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           />
           <button className="loginAndSignUp-button-login">Login</button>
+          <Link to={"/signup"}>
+            <h6>Non sei registrato?</h6>
+          </Link>
         </form>
       </div>
     </div>
