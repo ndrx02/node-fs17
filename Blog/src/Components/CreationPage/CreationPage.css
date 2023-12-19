@@ -8,8 +8,6 @@
     background-color: wheat;
     height: 100vh;
 }
-
-
 .Container form {
     display: flex;
     flex-direction: column;
@@ -21,16 +19,21 @@
     border-radius: 7px;
     padding:10px 5px;
 }
-
 .Container form button {
-    padding: 0;
+    padding: 15px 30px;
     margin: 0;
     border: 0;
     cursor: pointer;
-    height: 1.5rem;
-    width: 4rem;
     border-radius: 7px;
-   background-color: hsl(240, 69%, 16%);
-   color: white;
+    background-color: hsl(240, 69%, 16%);
+    color: white;
+    font-size: medium;
 }
-
+.Container form input, .Container form textarea {
+    max-width: 98%;
+}
+.submit-button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

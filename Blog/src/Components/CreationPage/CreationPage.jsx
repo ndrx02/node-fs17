@@ -18,7 +18,9 @@ export function CreationPage() {
         <textarea id="content-preview" rows="2" cols="30" />
         <label htmlFor="banner">Imagine</label>
         <input class="fileInput" type="file" id="banner" />
-        <button>Submit</button>
+        <div class="submit-button">
+          <button>Submit</button>   
+        </div>
       </form>
       <Link to="/">Return to Home</Link>
     </div>
