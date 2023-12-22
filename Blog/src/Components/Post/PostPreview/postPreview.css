@@ -1,0 +1,27 @@
+.container-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed black;
+    padding: 1vw;
+    margin-top: 1vw;
+    font-style: oblique;
+    background-color: rgb(243, 243, 243);
+}
+
+.image-post-preview{    
+    height: 10vh;
+    width: 5vw;
+}
+
+.title-post {
+    font-size: x-large;
+}
+
+.data-post:hover,
+.title-post:hover,
+.riassunto-post:hover {
+    font-weight: bold;
+    color: darkblue;
+}

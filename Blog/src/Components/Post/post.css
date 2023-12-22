@@ -1,0 +1,8 @@
+.container-text {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed black;
+    width: 20vw;
+    padding: 1vw;
+    background-color: #F5F5F5;
+}
