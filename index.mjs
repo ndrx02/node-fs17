@@ -1,12 +1,13 @@
 import express from "express";
-
-const postData = [];
+import cors from 'cors'
+const postData = ["cane", "casa"];
 
 let idPost = 1;
 
 const app = express();
 
 app.use(express.json());
+app.use(cors())
 
 app.get("/posts", (req, res) => {
   res.json(postData);
