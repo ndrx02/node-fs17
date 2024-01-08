@@ -1,6 +1,10 @@
 import express from "express";
 import cors from 'cors'
-const postData = ["cane", "casa"];
+const postData = [{
+  title: "title",
+  data: "data",
+  resume: "resume",
+}];
 
 let idPost = 1;
 
