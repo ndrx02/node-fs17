@@ -8,20 +8,19 @@ export const PostPreview = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get('http://localhost:3000/posts')
-      setData({
-        title: await response[0].title,
-        data: await response.data,
-        resume: await response.resume,
-      })
-      console.log(data)
+      setData(
+        response.data[0]
+      )
     }
     fetchData()
   }, [])
 
+  console.log(data)
+
   return (
     <div className="container-post">
       <img className="image-post-preview" src="https://avatars.githubusercontent.com/u/104137753?v=4" alt="image" />
-      <h1 className="title-post"> {/* {data && data.title} */} </h1>
+      <h1 className="title-post"> {data && data.title} </h1>
       <p className="data-post"> data </p>
       <p className="riassunto-post">riassunto</p>
     </div>
