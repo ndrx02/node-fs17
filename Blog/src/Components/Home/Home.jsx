@@ -5,9 +5,25 @@ import { ProfileUser } from "../ProfileUser/ProfileUser";
 import "../Shared_button/button.css";
 import "./home.css";
 import icons from './dynamic-icons.jsx'
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export const Home = () => {
   const linkButton = [];
+  const [data, setData] = useState()
+
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios.get('http://localhost:3000/posts')
+      setData(
+        response.data
+      )
+    }
+    fetchData()
+  }, [])
+
+
   return (
     <div>
       <div className="info-user-container">
@@ -30,7 +46,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <PostPreview />
+      {data && data.map(el => <PostPreview data={el}/>)}
       <Link to="/post"> continue reading</Link>
     </div>
   );

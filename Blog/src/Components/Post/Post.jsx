@@ -14,7 +14,6 @@ export const Post = () => {
     }
     fetchData();
   }, []);
-  console.log(data);
 
   return (
     <div>
@@ -22,7 +21,7 @@ export const Post = () => {
         data.map((post) => {
           return (
             <div>
-              <PostPreview />
+              <PostPreview data={post} />
               <div className="container-text">
                 {/*         <h3></h3>
                  */}{" "}

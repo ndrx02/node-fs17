@@ -1,24 +1,7 @@
 import { useEffect, useState } from "react";
 import "./postPreview.css"
-import axios from "axios"
-export let dataToExport
 
-export const PostPreview = () => {
-
-  const [data, setData] = useState()
-
-
-  useEffect(() => {
-    async function fetchData() {
-      const response = await axios.get('http://localhost:3000/posts')
-      setData(
-        response.data[0]
-      )
-    }
-    fetchData()
-  }, [])
-
-  console.log(data)
+export const PostPreview = ( {data} ) => {
 
 return (
   <div className="container-post">
